@@ -3,11 +3,14 @@
 - esl-hot-update
 - 对esl模块，做热更新加载，极大方便调试！
 - 完美兼容edp、edp-webserver，使用方便
+- 全面支持支持MVC、Component、monitor、模板文件、LESS等等
 
 # 安装
 
 > npm install ehu -g
+
 > cd yourProjectDir
+
 > cd ehu [-port][-noServerCLI]
 
 # 配置
