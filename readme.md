@@ -5,15 +5,11 @@
 - 完美兼容edp、edp-webserver，使用方便
 - 全面支持支持MVC、Component、monitor、模板文件、LESS等等
 
-# 安装
+## 安装
 
-> npm install ehu -g
+> npm install -g ehu（mac下需要sudo，windows下需要管理员权限）
 
-> cd yourProjectDir
-
-> cd ehu [-port][-noServerCLI]
-
-# 配置
+## 配置
 
 - yourProjectDir/ehu.config（JSON格式）
 - 配置参考
@@ -33,3 +29,21 @@
         "port": 8844
     }
 ```
+
+## 启动
+
+> cd yourProjectDir
+
+> ehu [-p(--port)]
+
+### 手动启动默认web server
+
+> cd yourProjectDir
+
+> edp webserver start
+
+> ehu -n(--noServerCLI)
+
+或者先配置defaultServerCLI为""
+
+> ehu

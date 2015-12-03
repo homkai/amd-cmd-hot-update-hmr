@@ -1,7 +1,7 @@
 {
   "name": "ehu",
   "description": "esl-hot-update: Hot update esl modules when modifed. JS, LESS, tpl, component is all supported!",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "keywords": [
     "ehu",
     "esl",
