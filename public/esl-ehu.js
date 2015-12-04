@@ -1613,7 +1613,12 @@ var esl;
         // 再throw一个Error多此一举了
         var script = document.createElement('script');
         script.setAttribute('data-require-id', moduleId);
-        script.src = toUrl(moduleId + '.js');
+
+        // 这里添加一个时间戳，目的是在每次更新后，能够保证debug里面可以加载一个新的文件，保证修改内容同步
+        // 不加会有不同步的问题
+        // by tangguangyao
+        var timestamp = (new Date()).getTime();
+        script.src = toUrl(moduleId + '.js?v=' + timestamp);
         script.async = true;
         if (script.readyState) {
             script.onreadystatechange = innerOnload;
