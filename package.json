@@ -1,7 +1,7 @@
 {
   "name": "ehu",
   "description": "esl-hot-update: Hot update esl modules when modifed. JS, LESS, tpl, component is all supported!",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "keywords": [
     "ehu",
     "esl",
@@ -19,8 +19,9 @@
   },
   "homepage": "https://github.com/homkai/ehu#readme",
   "files": [
+    "bin",
     "lib",
-    "bin"
+    "public"
   ],
   "bin": {
     "ehu": "./bin/ehu.js"
