@@ -5,6 +5,20 @@
 - 完美兼容edp、edp-webserver，使用方便
 - 全面支持支持MVC、Component、monitor、模板文件、LESS等等
 
+## 快速使用（FCFE同学参考）
+* /nirvana-workspace *
+
+> npm install -g ehu（mac下需要sudo，windows下需要管理员权限）
+
+> 在原来执行edp webserver start命令的路径 执行 ehu（不再需要执行 edp webserver start）
+
+> 原来端口号8848修改为8844（原8848依旧可以使用，但不支持热更新）
+
+* /chunhua-workspace及其他项目 参考配置 *
+
+
+# 高级使用
+
 ## 安装
 
 > npm install -g ehu（mac下需要sudo，windows下需要管理员权限）
