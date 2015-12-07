@@ -15,7 +15,7 @@ function noServerCLI() {
 
 // 命令行参数支持
 program
-    .version('0.0.6')
+    .version('0.0.7')
     .usage('[options]')
     .option('-p, --port <n>', 'Set the port(diffrent from edb-webserver) to start server', setPort)
     .option('-n, --noServerCLI', 'Not set the defaultServerCLI. Start default web server manually', noServerCLI)
