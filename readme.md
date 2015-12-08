@@ -65,3 +65,10 @@
 或者先配置defaultServerCLI为""
 
 > ehu
+
+## FAQ
+
+1、命令行报错如何解决？
+
+- 先按原来的方式启动默认web server，如edp webserver start
+- 再在启动web server的路径，重开一个命令行窗口启动ehu，并加参数-n，即ehu -n
