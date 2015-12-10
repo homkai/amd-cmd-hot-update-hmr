@@ -1614,9 +1614,9 @@ var esl;
         var script = document.createElement('script');
         script.setAttribute('data-require-id', moduleId);
 
-        // 这里添加一个时间戳，目的是在每次更新后，能够保证debug里面可以加载一个新的文件，保证修改内容同步
-        // 不加会有不同步的问题
-        // by tangguangyao
+        // [EHU] chrome在调试时，如果加载path不变，控制台展示的source不更新
+        // 会导致实际内容和调试内容不匹配
+        // 这里暂时粗暴简单的解决匹配问题，加上时间戳确保每次都会被强制更新
         var timestamp = (new Date()).getTime();
         script.src = toUrl(moduleId + '.js?v=' + timestamp);
         script.async = true;
