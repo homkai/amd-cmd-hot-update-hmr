@@ -1,0 +1,49 @@
+{
+  "name": "ehu",
+  "description": "esl-hot-update: Hot update esl modules when modifed. JS, LESS, tpl, component is all supported!",
+  "version": "0.0.8",
+  "keywords": [
+    "ehu",
+    "esl",
+    "hot update",
+    "cli"
+  ],
+  "author": "Homkai",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/homkai/ehu.git"
+  },
+  "bugs": {
+    "url": "https://github.com/homkai/ehu/issues"
+  },
+  "homepage": "https://github.com/homkai/ehu#readme",
+  "files": [
+    "bin",
+    "lib",
+    "public"
+  ],
+  "bin": {
+    "ehu": "./bin/ehu.js"
+  },
+  "dependencies": {
+    "async": "^1.5.0",
+    "commander": "^2.9.0",
+    "express": "^4.13.3",
+    "express-http-proxy": "^0.6.0",
+    "lodash": "^3.10.1",
+    "socket.io": "^1.3.7",
+    "watch": "^0.16.0"
+  },
+  "devDependencies": {},
+  "scripts": {},
+  "engine-strict": true,
+  "engines": {
+    "node": ">= 0.12"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ]
+}
